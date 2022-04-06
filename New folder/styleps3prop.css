@@ -1,0 +1,40 @@
+/*BEGIN PS3 Controller Styling*/
+.controller.ps. {
+    background-image: url(ps3.gif);
+}
+
+.ps .disconnected {
+    background-image: url(base-02.png);
+}
+
+
+.ps .trigger {
+    background-image: url(baseps3-08.png);
+}
+
+
+.ps .bumper {
+    background-image: url(baseps3-07.png);
+}
+
+.ps .quadrant {
+    background-image: url(none);
+}
+
+.ps .back, .ps.white .start {
+    background-image: url(baseps3-05.png);
+}
+
+.ps .button {
+    background-image: url(baseps3-03.png);
+}
+
+.ps .stick {
+    background-image: url(baseps3-04.png);
+}
+
+.ps .face {
+    background-image: url(baseps3-06.png);
+}
+
+/*END PS3 Controller Styling*/
