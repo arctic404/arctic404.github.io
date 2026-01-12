@@ -34,7 +34,7 @@
 
 /* Bumpers */
 .xbox .bumper {
-    background-image: url(ontroller-overlay_Bumper.svg);
+    background-image: url(controller-overlay_Bumper.svg);
     opacity: 0;
 }
 
