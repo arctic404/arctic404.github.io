@@ -1,27 +1,49 @@
-/* BEGIN Xbox Controller Styling */
+/* BEGIN Xbox One Asset Override Only */
 
+/* Base controller */
 .controller.xbox {
-    background-image: url(controller-overlay_BASE.svg);
+    background-image: url(controller-overlay-BASE.svg);
 }
 
+/* Disconnected */
+.xbox.disconnected {
+    background-image: url(controller-overlay-DISCONNECTED.svg);
+}
+
+/* Triggers */
 .xbox .trigger {
-    background-image: url(controller-overlay_LT.svg);
+    background-image: url(controller-overlay-TRIGGER.svg);
 }
 
+/* Bumpers */
 .xbox .bumper {
-    background-image: url(controller-overlay_Bumper.svg);
+    background-image: url(controller-overlay-BUMPER.svg);
 }
 
+/* Guide / quadrant */
+.xbox .quadrant {
+    background-image: url(controller-overlay-GUIDE.svg);
+}
+
+/* Start / Back */
+.xbox .back,
+.xbox .start {
+    background-image: url(controller-overlay-START-SELECT.svg);
+}
+
+/* Face buttons (ABXY) */
 .xbox .button {
-    background-image: url(controller-overlay_DPAD.svg);
+    background-image: url(controller-overlay-ABXY.svg);
 }
 
+/* Sticks */
 .xbox .stick {
-    background-image: url(controller-overlay_Stick.svg);
+    background-image: url(controller-overlay-STICK.svg);
 }
 
+/* D-Pad */
 .xbox .face {
-    background-image: url(controller-overlay_ABXY.svg);
+    background-image: url(controller-overlay-DPAD.svg);
 }
 
-/* END Xbox Controller Styling */
+/* END Xbox One Asset Override Only */
