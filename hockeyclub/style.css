@@ -1,27 +1,27 @@
 /* BEGIN Xbox Controller Styling */
 
 .controller.xbox {
-    background-image: url(controller-overlay_BASE.svg");
+    background-image: url(controller-overlay_BASE.svg);
 }
 
 .xbox .trigger {
-    background-image: url(controller-overlay_LT.svg");
+    background-image: url(controller-overlay_LT.svg);
 }
 
 .xbox .bumper {
-    background-image: url(controller-overlay_Bumper.svg");
+    background-image: url(controller-overlay_Bumper.svg);
 }
 
 .xbox .button {
-    background-image: url(controller-overlay_DPAD.svg");
+    background-image: url(controller-overlay_DPAD.svg);
 }
 
 .xbox .stick {
-    background-image: url(controller-overlay_Stick.svg");
+    background-image: url(controller-overlay_Stick.svg);
 }
 
 .xbox .face {
-    background-image: url(controller-overlay_ABXY.svg");
+    background-image: url(controller-overlay_ABXY.svg);
 }
 
 /* END Xbox Controller Styling */
