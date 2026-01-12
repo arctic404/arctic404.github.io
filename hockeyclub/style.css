@@ -1,49 +1,115 @@
-/* BEGIN Xbox One Asset Override Only */
+/* BEGIN Xbox One Controller Styling (image-only) */
 
-/* Base controller */
 .controller.xbox {
     background-image: url(controller-overlay_BASE.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Disconnected */
+.xbox.white {
+    background-image: url(xbox-assets/base-white.svg);
+}
+
 .xbox.disconnected {
-    background-image: url(controller-overlay_DISCONNECTED.svg);
+    background-image: url(xbox-assets/disconnected.svg);
+}
+
+.xbox.disconnected div {
+    display: none;
 }
 
 /* Triggers */
 .xbox .trigger {
     background-image: url(controller-overlay_LT.svg);
+    opacity: 0;
+}
+
+.xbox .trigger.pressed {
+    opacity: 1;
+}
+
+.xbox .trigger.right {
+    transform: rotateY(180deg);
 }
 
 /* Bumpers */
 .xbox .bumper {
-    background-image: url(controller-overlay_Bumper.svg);
+    background-image: url(ontroller-overlay_Bumper.svg);
+    opacity: 0;
 }
 
-/* Guide / quadrant */
-.xbox .quadrant {
-    background-image: url(controller-overlay_GUIDE.svg);
+.xbox .bumper.pressed {
+    opacity: 1;
 }
+
+.xbox .bumper.right {
+    transform: rotateY(180deg);
+}
+
+/* Xbox quadrant */
+.xbox .quadrant {
+    background-image: url(xbox-assets/quadrant.svg);
+}
+
+.xbox .p0 { transform: rotate(0deg); }
+.xbox .p1 { transform: rotate(90deg); }
+.xbox .p2 { transform: rotate(270deg); }
+.xbox .p3 { transform: rotate(180deg); }
 
 /* Start / Back */
 .xbox .back,
 .xbox .start {
-    background-image: url();
+    background-image: url(xbox-assets/start-select.svg);
+    opacity: 0;
 }
 
-/* Face buttons (ABXY) */
+.xbox .back.pressed,
+.xbox .start.pressed {
+    opacity: 1;
+}
+
+.xbox .start {
+    background-position: 33px 0;
+}
+
+/* ABXY buttons */
 .xbox .button {
     background-image: url(controller-overlay_ABXY.svg);
 }
 
+.xbox .button.pressed {
+    background-position-y: -48px;
+    opacity: 1;
+}
+
+.xbox .a { background-position: 0 0; }
+.xbox .b { background-position: -49px 0; }
+.xbox .x { background-position: -98px 0; }
+.xbox .y { background-position: 48px 0; }
+
 /* Sticks */
 .xbox .stick {
     background-image: url(controller-overlay_Stick.svg);
+    background-position: -85px 0;
+}
+
+.xbox .stick.pressed {
+    background-position: 0 0;
 }
 
 /* D-Pad */
 .xbox .face {
     background-image: url(controller-overlay_DPAD.svg);
+    opacity: 0;
 }
 
-/* END Xbox One Asset Override Only */
+.xbox .face.pressed {
+    opacity: 1;
+}
+
+.xbox .face.up    { background-position: 34px 0; }
+.xbox .face.down  { background-position: 34px -56px; }
+.xbox .face.left  { background-position: 0 -93px; }
+.xbox .face.right { background-position: 0 -57px; }
+
+/* END Xbox One Controller Styling */
