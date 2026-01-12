@@ -4,19 +4,19 @@
 }
 
 .xbox. trigger {
-    background-image: url(sakura-05.png);
+    background-image: url(controller-overlay_LT.svg);
 }
 
 .xbox .bumper {
-    background-image: url(sakura-04.png);
+    background-image: url(controller-overlay_Bumper.svg);
 }
 
 .xbox .touchpad.pressed {
-    background-image: url(sakura-06.png);
+    background-image: url();
 }
 
 .xbox .back, .xbox .start {
-    background-image: url(sakura-07.png);
+    background-image: url();
 }
 
 .xbox .button {
@@ -24,11 +24,11 @@
 }
 
 .xbox .stick {
-    background-image: url(sakura-02.png);
+    background-image: url(controller-overlay_Stick.svg);
 }
 
 .xbox .face {
-    background-image: url(sakura-03.png);
+    background-image: url(controller-overlay__ABXY.svg);
 }
 
 /*END xbox White Controller Styling*/
