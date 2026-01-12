@@ -2,48 +2,48 @@
 
 /* Base controller */
 .controller.xbox {
-    background-image: url(controller-overlay-BASE.svg);
+    background-image: url(controller-overlay_BASE.svg);
 }
 
 /* Disconnected */
 .xbox.disconnected {
-    background-image: url(controller-overlay-DISCONNECTED.svg);
+    background-image: url(controller-overlay_DISCONNECTED.svg);
 }
 
 /* Triggers */
 .xbox .trigger {
-    background-image: url(controller-overlay-TRIGGER.svg);
+    background-image: url(controller-overlay_LT.svg);
 }
 
 /* Bumpers */
 .xbox .bumper {
-    background-image: url(controller-overlay-BUMPER.svg);
+    background-image: url(controller-overlay_Bumper.svg);
 }
 
 /* Guide / quadrant */
 .xbox .quadrant {
-    background-image: url(controller-overlay-GUIDE.svg);
+    background-image: url(controller-overlay_GUIDE.svg);
 }
 
 /* Start / Back */
 .xbox .back,
 .xbox .start {
-    background-image: url(controller-overlay-START-SELECT.svg);
+    background-image: url();
 }
 
 /* Face buttons (ABXY) */
 .xbox .button {
-    background-image: url(controller-overlay-ABXY.svg);
+    background-image: url(controller-overlay_ABXY.svg);
 }
 
 /* Sticks */
 .xbox .stick {
-    background-image: url(controller-overlay-STICK.svg);
+    background-image: url(controller-overlay_Stick.svg);
 }
 
 /* D-Pad */
 .xbox .face {
-    background-image: url(controller-overlay-DPAD.svg);
+    background-image: url(controller-overlay_DPAD.svg);
 }
 
 /* END Xbox One Asset Override Only */
