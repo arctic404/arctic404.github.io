@@ -1,115 +1,235 @@
-/* BEGIN Xbox One Controller Styling (image-only) */
-
-.controller.xbox {
-    background-image: url(controller-overlay_BASE.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+/*BEGIN Xbox One Controller Styling*/
+.controller.custom{
+    /* background: url(controller-overlay_BASE.svg); */
+    height: 630px;
+    width: 750px;
+    margin-left: -375px;
+    margin-top: -285px;
 }
-
-.xbox.white {
-    background-image: url(xbox-assets/base-white.svg);
+.custom.white{
+    background: url(controller-overlay_BASE.svg);
 }
-
-.xbox.disconnected {
-    background-image: url(xbox-assets/disconnected.svg);
+.custom.disconnected {
+    
 }
-
-.xbox.disconnected div {
+.custom.disconnected div {
     display: none;
 }
-
-/* Triggers */
-.xbox .trigger {
-    background-image: url(controller-overlay_LT.svg);
+.custom .triggers{
+    width: 520px;
+    height: 121px;
+    position: absolute;
+    left: 126px;
+    top: 239px;
+    background: url(controller-overlay_LT.svg);
+    /* background-position: -152px 0px; */
+    -webkit-clip-path: 50%;
+}
+.custom .trigger{
+    width: 88px;
+    height: 121px;
+    background: url(controller-overlay_LT.svg);
     opacity: 0;
 }
-
-.xbox .trigger.pressed {
-    opacity: 1;
+.custom .trigger.left{
+    float: left;
+    background-position:0 0;
 }
-
-.xbox .trigger.right {
+.custom .trigger.right{
+    float: right;
     transform: rotateY(180deg);
 }
-
-/* Bumpers */
-.xbox .bumper {
-    background-image: url(controller-overlay_Bumper.svg);
+.custom .bumper{
+    width: 170px;
+    height: 61px;
+    background: url(controller-overlay_Bumper.svg);
     opacity: 0;
 }
-
-.xbox .bumper.pressed {
+.custom .bumpers{
+    position: absolute;
+    width: 536px;
+    height: 61px;
+    left: 107px;
+    top: 129px;
+    display: none;
+}
+.custom .bumper.pressed{
     opacity: 1;
 }
-
-.xbox .bumper.right {
+.custom .bumper.left{
+    float: left;
+}
+.custom .bumper.right{
+    float: right;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-
-/* Xbox quadrant */
-.xbox .quadrant {
-    background-image: url(xbox-assets/quadrant.svg);
+.custom .quadrant{
+    position: absolute;
+    /* background: url(xbox-assets/quadrant.svg); */
+    height: 45px;
+    width: 45px;
+    top: 258px;
+    left: 354px;
+    z-index: 0;
 }
-
-.xbox .p0 { transform: rotate(0deg); }
-.xbox .p1 { transform: rotate(90deg); }
-.xbox .p2 { transform: rotate(270deg); }
-.xbox .p3 { transform: rotate(180deg); }
-
-/* Start / Back */
-.xbox .back,
-.xbox .start {
-    background-image: url(xbox-assets/start-select.svg);
+.custom .p0{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.custom .p1{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.custom .p2{
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.custom .p3{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.custom .arrows{
+    position: absolute;
+    width: 141px;
+    height: 33px;
+    top: 264px;
+    left: 306px;
+    display: none;
+}
+.custom .back, .custom .start{
+    background: url(xbox-assets/start-select.svg);
+    width: 33px;
+    height: 33px;
     opacity: 0;
 }
-
-.xbox .back.pressed,
-.xbox .start.pressed {
+.custom .back.pressed, .custom .start.pressed{
     opacity: 1;
 }
-
-.xbox .start {
-    background-position: 33px 0;
+.custom .back{
+    float: left;
 }
-
-/* ABXY buttons */
-.xbox .button {
-    background-image: url(controller-overlay_ABXY.svg);
+.custom .start{
+    background-position: 33px 0px;
+    float: right;
 }
-
-.xbox .button.pressed {
+.custom .abxy{
+    position: absolute;
+    width: 157px;
+    height: 164px;
+    top: 231px;
+    left: 388px;
+    background: url(controller-overlay_ABXY.svg);
+    /* background-size: contain; */
+}
+.custom .button{
+    position: absolute;
+    background: url(controller-overlay_ABXY.svg);
+    width: 48px;
+    height: 48px;
+}
+.custom .button.pressed{
     background-position-y: -48px;
+    margin-top: 5px;
     opacity: 1;
 }
-
-.xbox .a { background-position: 0 0; }
-.xbox .b { background-position: -49px 0; }
-.xbox .x { background-position: -98px 0; }
-.xbox .y { background-position: 48px 0; }
-
-/* Sticks */
-.xbox .stick {
-    background-image: url(controller-overlay_Stick.svg);
-    background-position: -85px 0;
+.custom .a{
+    background-position: 0 0;
+    top: 108px;
+    left: 55px;
 }
-
-.xbox .stick.pressed {
+.custom .b{
+    background-position: -49px 0;
+    top: 57px;
+    right: 3px;
+}
+.custom .x{
+    background-position: -98px 0;
+    top: 57px;
+    left: 4px;
+}
+.custom .y{
+    background-position: 48px 0;
+    left: 55px;
+    top: 5px;
+}
+.custom .sticks{
+    position: absolute;
+    width: 137px;
+    height: 139px;
+    top: 239px;
+    left: 224px;
+    background: url(controller-overlay_Stick.svg);*/;
+    background-position: -117px -214px;
+    -webkit-clip-path: circle(50% at center);
+    clip-path: circle(50% at center);
+}
+.custom .stick{
+    position: absolute;
+    background: url(controller-overlay_Stick.svg);
+    background-position: -85px 0;
+    height: 83px;
+    width: 83px;
+}
+.custom .stick.pressed{
     background-position: 0 0;
 }
-
-/* D-Pad */
-.xbox .face {
-    background-image: url(controller-overlay_DPAD.svg);
+.custom .stick.left{
+    top: 24px;
+    left: 27px;
+}
+.custom .stick.right{
+    top: 113px;
+    left: 288px;
+    display: none;
+}
+.custom .dpad{
+    position: absolute;
+    width: 110px;
+    height: 111px;
+    top: 345px;
+    left: 223px;
+    display: none;
+}
+.custom .face{
+    background: url(controller-overlay_DPAD.svg);
+    position: absolute;
     opacity: 0;
 }
-
-.xbox .face.pressed {
+.custom .face.pressed{
     opacity: 1;
 }
-
-.xbox .face.up    { background-position: 34px 0; }
-.xbox .face.down  { background-position: 34px -56px; }
-.xbox .face.left  { background-position: 0 -93px; }
-.xbox .face.right { background-position: 0 -57px; }
-
-/* END Xbox One Controller Styling */
+.custom .face.up{
+    background-position: 34px 0;
+    left: 38px;
+    top: 0px;
+    width: 34px;
+    height: 56px;
+}
+.custom .face.down{
+    left: 38px;
+    bottom: 0;
+    width: 34px;
+    height: 56px;
+}
+.custom .face.left{
+    background-position: 0 -93px;
+    width: 55px;
+    height: 35px;
+    top: 38px;
+    left: 0;
+}
+.custom .face.right{
+    background-position: 0 -57px;
+    width: 55px;
+    height: 35px;
+    top: 38px;
+    right: 0;
+}
+.custom.half{
+    margin-top: -315px;
+}
+.custom{
+    background: no-repeat center;
+}
+/*END Xbox One Controller Styling*/
